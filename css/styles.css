@@ -72,7 +72,6 @@ header{
 
 
 
-
 /* =================================
   Media Queries
 ==================================== */
@@ -102,7 +101,7 @@ header{
 		flex-direction: column;
 		align-items: wrap;}
 
-
+	
 }
 
 
@@ -117,6 +116,7 @@ header{
 		.banner{
 			flex-direction: row;
 			align-items: wrap;
+<<<<<<< HEAD
 }
 		.logo {
 			order:1
@@ -132,6 +132,9 @@ header{
 		.row-3 {
 			display:flex;
 			flex-direction: wrap;
+=======
+
+>>>>>>> parent of 8935ea1 (nav links)
 		}
 }
 
