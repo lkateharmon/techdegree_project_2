@@ -97,16 +97,11 @@ header{
 		text-align: center;
 	}
 
-
-
-	.banner{
+	.banner,.portfilio{
 		flex-direction: column;
 		align-items: wrap;}
 
-	.portfilio{
-			flex-direction: column;
-			align-items: wrap;
-}
+	
 }
 
 
