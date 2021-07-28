@@ -72,6 +72,7 @@ header{
 
 
 
+
 /* =================================
   Media Queries
 ==================================== */
@@ -101,7 +102,7 @@ header{
 		flex-direction: column;
 		align-items: wrap;}
 
-	
+
 }
 
 
@@ -116,6 +117,19 @@ header{
 		.banner{
 			flex-direction: row;
 			align-items: wrap;
+}
+		.logo {
+			order:1
+		}
+
+		.work {
+			display: flex;
+			flex-wrap:wrap;
+			
+
+
+		}
+
 
 		}
 
