@@ -121,20 +121,19 @@ header{
 		.logo {
 			order:1
 		}
-
-		.work {
-			display: flex;
-			flex-wrap:wrap;
-			
-
-
+		.row-1 {
+			display:flex;
+			flex-direction: wrap;
 		}
-
-
+		.row-2 {
+			display:flex;
+			flex-direction: wrap;
 		}
-
+		.row-3 {
+			display:flex;
+			flex-direction: wrap;
+		}
 }
-
 
 
 
