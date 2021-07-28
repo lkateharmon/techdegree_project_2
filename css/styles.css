@@ -55,7 +55,7 @@ h3 {
 ==================================== */
 
 header{
-	display: flex;
+
 }
 
 .banner{
@@ -67,11 +67,8 @@ header{
 	display: flex;
 	flex-wrap: nowrap;
 	justify-content: space-around;
+}
 
-}
-.portfilio {
-	display: flex;
-}
 
 
 
@@ -107,27 +104,27 @@ header{
 }
 
 
-
 @media (min-width: 768px) {
+
 	.main-nav{
 		display:flex;
 		flex-direction: row;
 		align-items: center;
-		justify-content: space-around;}
+		justify-content: space-around;
+	}
 
 		.banner{
 			flex-direction: row;
-			align-items: wrap;}
+			align-items: wrap;
+	}
 
 		.logo {
 			order:1
-		}
-		.portfilio{
-			flex-direction: row;
-		}
+	}
+		
 
 
-		}
+}
 
 @media (min-width: 1025px) {
 	header {
