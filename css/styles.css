@@ -1,0 +1,138 @@
+/* =================================
+  Standard Element Styles
+==================================== */
+
+*{
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+body {
+	padding:20px;
+}
+a {
+	text-decoration: none;
+	color:#393939;
+
+}
+.main-nav, a, li {
+  margin-top: 5px;
+  padding: 5px 10px 5px 10px;
+	/* line-height: 1.6; */
+  list-style: none;
+}
+
+img {
+	max-width: 100%;
+	border-radius: 0%;
+
+
+}
+
+.logo{
+	margin-right: auto;
+
+
+}
+.intro {
+	font-size: .95em;
+}
+p {
+	font-size: .95em;
+
+}
+h2,h3{
+
+		justify-content: center;
+		text-align: center;
+}
+h3 {
+	padding-top: 40px;
+}
+
+
+/* =================================
+  Base Styles for Flexbox
+==================================== */
+
+header{
+	display: flex;
+}
+
+.banner{
+	display: flex;
+
+}
+
+.bottom-nav {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+
+}
+
+
+
+/* =================================
+  Media Queries
+==================================== */
+
+@media (min-width: 320px) {
+
+	header{
+		display:flex;
+		flex-direction: column;
+		align-items: center;
+
+	}
+
+	img.logo{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	p{
+		display: flex;
+		justify-content: center;
+		text-align: center;
+	}
+
+
+
+	.banner{
+		flex-direction: column;
+		align-items: wrap;}
+
+	.portfilio{
+			flex-direction: column;
+			align-items: wrap;
+}
+}
+
+
+
+@media (min-width: 768px) {
+	.main-nav{
+		display:flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-around;}
+
+		.banner{
+			flex-direction: row;
+			align-items: wrap;
+
+		}
+
+}
+
+
+
+
+@media (min-width: 1025px) {
+	header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+}
