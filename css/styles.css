@@ -17,21 +17,17 @@ a {
 .main-nav, a, li {
   margin-top: 5px;
   padding: 5px 10px 5px 10px;
-	/* line-height: 1.6; */
+
   list-style: none;
 }
 
 img {
 	max-width: 100%;
 	border-radius: 0%;
-
-
 }
 
 .logo{
 	margin-right: auto;
-
-
 }
 .intro {
 	font-size: .95em;
@@ -40,6 +36,7 @@ p {
 	font-size: .95em;
 
 }
+
 h2,h3{
 
 		justify-content: center;
@@ -50,16 +47,14 @@ h3 {
 }
 
 
-/* =================================
-  Base Styles for Flexbox
-==================================== */
-
-header{
-
 }
+/* =================================
+  Base Styles for Flexbox always present
+==================================== */
 
 .banner{
 	display: flex;
+
 
 }
 
@@ -67,6 +62,20 @@ header{
 	display: flex;
 	flex-wrap: nowrap;
 	justify-content: space-around;
+}
+
+.mainwraper {
+	display: flex;
+}
+
+
+.main-nav-2 {
+	display: flex;
+
+}
+.second-nav{
+
+		justify-content: flex-end;
 }
 
 
@@ -89,19 +98,33 @@ header{
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+
+
 	}
 
 	p{
 		display: flex;
 		justify-content: center;
-		text-align: center;
-	}
+		text-align: center;}
+
+p.intro	{
+			display: flex;
+			justify-content: center;
+			text-align:left;
+
+		}
 
 	.banner,.portfilio{
 		flex-direction: column;
 		align-items: wrap;}
 
 }
+.second-nav {
+	display:none;
+}
+
+
+
 
 
 @media (min-width: 768px) {
@@ -109,19 +132,58 @@ header{
 	.main-nav{
 		display:flex;
 		flex-direction: row;
-		align-items: center;
-		justify-content: space-around;
-	}
 
-		.banner{
+	}
+	.banner{
+			display: flex;
 			flex-direction: row;
-			align-items: wrap;
+}
+	.logo {
+			order:1
+}
+	.intro{
+		padding-right:30px;
+	}
+	.main-wraper{
+			display: flex;
+			flex-direction: row;
+			padding-bottom: 5px;
+}
+
+	.item-1 {
+		flex-grow:1 ;
 	}
 
-		.logo {
-			order:1
+	.item-1 {
+			padding-right: 20px;
 	}
-		
+	.item-3 {
+			padding-right: 20px;
+	}
+	.item-5 {
+			padding-right: 20px;
+	}
+	.contact-text{
+	 	 padding:0 200px 0 200px;
+}
+.second-nav {
+	display: flex;
+	flex-direction: row;
+
+}
+p.contact-text {
+	padding-left: 200px;
+	padding-right:200px;
+
+}
+
+.bottom-nav {
+	display: none;
+}
+
+.second-nav {
+	display: flex;
+}
 
 
 }
@@ -132,4 +194,8 @@ header{
 		justify-content: space-between;
 	}
 
+
+
+
+	}
 }
