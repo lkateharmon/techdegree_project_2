@@ -47,7 +47,7 @@ h3 {
 }
 
 
-}
+
 /* =================================
   Base Styles for Flexbox always present
 ==================================== */
@@ -116,7 +116,7 @@ p.intro	{
 
 	.banner,.portfilio{
 		flex-direction: column;
-		align-items: wrap;}
+		}
 
 }
 .second-nav {
@@ -128,6 +128,7 @@ p.intro	{
 
 
 @media (min-width: 768px) {
+
 
 	.main-nav{
 		display:flex;
