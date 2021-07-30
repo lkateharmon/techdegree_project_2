@@ -1,7 +1,3 @@
-/* =================================
-  Standard Element Styles
-==================================== */
-
 *{
 	box-sizing: border-box;
 	font-family: 'Poppins', sans-serif;
@@ -14,6 +10,7 @@ a {
 	color:#393939;
 
 }
+
 .main-nav, a, li {
   margin-top: 5px;
   padding: 5px 10px 5px 10px;
@@ -25,18 +22,10 @@ img {
 	max-width: 100%;
 	border-radius: 0%;
 }
-
 .logo{
-	margin-right: auto;
-}
-.intro {
-	font-size: .95em;
-}
-p {
-	font-size: .95em;
+	align-items: center;
 
 }
-
 h2,h3{
 
 		justify-content: center;
@@ -46,26 +35,19 @@ h3 {
 	padding-top: 40px;
 }
 
-
+.main-footer{
+	text-align: center;
+}
 
 /* =================================
   Base Styles for Flexbox always present
 ==================================== */
 
-.banner{
-	display: flex;
-
-
-}
 
 .bottom-nav {
 	display: flex;
 	flex-wrap: nowrap;
 	justify-content: space-around;
-}
-
-.mainwraper {
-	display: flex;
 }
 
 
@@ -77,9 +59,6 @@ h3 {
 
 		justify-content: flex-end;
 }
-
-
-
 
 /* =================================
   Media Queries
@@ -98,14 +77,15 @@ h3 {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+    padding-bottom: 20px;
 
+}
+  .banner {
+    display: flex;
+    flex-direction: column;
 
-	}
+  }
 
-	p{
-		display: flex;
-		justify-content: center;
-		text-align: center;}
 
 p.intro	{
 			display: flex;
@@ -113,11 +93,10 @@ p.intro	{
 			text-align:left;
 
 		}
-
-	.banner,.portfilio{
-		flex-direction: column;
-		}
-
+.col {
+    	padding-right: .5em;
+    	padding-left: .5em;
+    }
 }
 .second-nav {
 	display:none;
@@ -125,56 +104,35 @@ p.intro	{
 
 
 
-
-
 @media (min-width: 768px) {
 
 
-	.main-nav{
+	.main-nav,.row1,.row2,.banner{
 		display:flex;
 		flex-direction: row;
-
-	}
-	.banner{
-			display: flex;
-			flex-direction: row;
 }
+
 	.logo {
-			order:1
+			order:1;
+      padding-right: 10px;
+
 }
 	.intro{
 		padding-right:30px;
-	}
-	.main-wraper{
-			display: flex;
-			flex-direction: row;
-			padding-bottom: 5px;
-}
-
-	.item-1 {
-		flex-grow:1 ;
+    padding-left: 30px;
 	}
 
-	.item-1 {
-			padding-right: 20px;
-	}
-	.item-3 {
-			padding-right: 20px;
-	}
-	.item-5 {
-			padding-right: 20px;
-	}
-	.contact-text{
-	 	 padding:0 200px 0 200px;
-}
+ .col {
+   flex:1 50%;
+ }
+
+ .row1,.row2 {
+   flex-wrap: wrap;}
+ }
+
 .second-nav {
 	display: flex;
 	flex-direction: row;
-
-}
-p.contact-text {
-	padding-left: 200px;
-	padding-right:200px;
 
 }
 
@@ -182,28 +140,26 @@ p.contact-text {
 	display: none;
 }
 
-.second-nav {
-	display: flex;
+.contact-text {
+	text-align: center;
+	padding-left: 100px;
+	padding-right: 100px;
 }
 
-
-}
 
 @media (min-width: 1025px) {
 	header {
 		flex-direction: row;
 		justify-content: space-between;
 	}
+  .row1{
+    flex-direction:row;
+    flex-wrap: wrap;
+}
 
-section {
-		display: flex;
-
+  .logo {
+    padding-right:10px;
+  }
+.col {
+  flex-basis:30%;
 }
-.item-2 {
-		padding-right: 20px;
-		width:auto;
-}
-.item-4 {
-		padding-right: 20px;
-}
-	}
