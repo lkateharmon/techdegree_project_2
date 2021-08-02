@@ -8,7 +8,6 @@ body {
 a {
 	text-decoration: none;
 	color:#393939;
-
 }
 
 .main-nav, a, li{
@@ -37,19 +36,12 @@ h3 {
 	text-align: center;
 }
 
-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: auto;
-  padding: 0 20px;
-  height: 100px;
-}
+
+
 
 /* =================================
   Base Styles for Flexbox
 ==================================== */
-
 
 
 	header{
@@ -84,7 +76,19 @@ p.intro	{
     	padding-left: .5em;
     }
 
+	footer {
+		  display: flex;
+			display: column;
+		  justify-content: space-between;
+		  align-items: center;
+		  margin-top: auto;
+		  padding: 0 20px;
+		  height: 100px;
+		}
 
+	.full {
+			display: none;
+		}
 
 
 
@@ -117,10 +121,14 @@ p.intro	{
  .row1,.row2 {
    flex-wrap: wrap;}
  }
+ .top {
+	 display: none;
+ }
 
-
-
-
+ li.full {
+ 	display: inline-block;
+ 	margin-left: 10px;
+ }
 
 @media (min-width: 1024px) {
 	header {
