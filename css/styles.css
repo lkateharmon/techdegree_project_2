@@ -11,11 +11,10 @@ a {
 
 }
 
-.main-nav, a, li {
+.main-nav, a, li{
   margin-top: 5px;
   padding: 5px 10px 5px 10px;
-
-  list-style: none;
+	list-style: none;
 }
 
 img {
@@ -34,37 +33,24 @@ h2,h3{
 h3 {
 	padding-top: 40px;
 }
-
-.main-footer{
+.contact-text {
 	text-align: center;
 }
 
-/* =================================
-  Base Styles for Flexbox always present
-==================================== */
-
-
-.bottom-nav {
-	display: flex;
-	flex-wrap: nowrap;
-	justify-content: space-around;
-}
-
-
-.main-nav-2 {
-	display: flex;
-
-}
-.second-nav{
-
-		justify-content: flex-end;
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  padding: 0 20px;
+  height: 100px;
 }
 
 /* =================================
-  Media Queries
+  Base Styles for Flexbox
 ==================================== */
 
-@media (min-width: 320px) {
+
 
 	header{
 		display:flex;
@@ -97,12 +83,14 @@ p.intro	{
     	padding-right: .5em;
     	padding-left: .5em;
     }
-}
-.second-nav {
-	display:none;
-}
 
 
+
+
+
+/* =================================
+		  Media Queries
+==================================== */
 
 @media (min-width: 768px) {
 
@@ -130,24 +118,11 @@ p.intro	{
    flex-wrap: wrap;}
  }
 
-.second-nav {
-	display: flex;
-	flex-direction: row;
-
-}
-
-.bottom-nav {
-	display: none;
-}
-
-.contact-text {
-	text-align: center;
-	padding-left: 100px;
-	padding-right: 100px;
-}
 
 
-@media (min-width: 1025px) {
+
+
+@media (min-width: 1024px) {
 	header {
 		flex-direction: row;
 		justify-content: space-between;
