@@ -80,23 +80,7 @@ p.intro	{
     	padding-left: .5em;
     }
 
-	footer {
-		  display: flex;
-		  justify-content: space-between;
-		  align-items: center;
-		  margin-top: auto;
-		  padding: 0 20px;
-		  height: 100px;
-		}
 
-	.footer-nav,{
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-	}
-	.full {
-		display: none;
-	}
 
 
 /* =================================
@@ -129,14 +113,6 @@ p.intro	{
    flex-wrap: wrap;}
  }
 
-.top {
-	display:none;
-}
-
-.full {
-	display: inline-block;
-
-}
 
 
 
