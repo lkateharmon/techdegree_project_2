@@ -10,11 +10,15 @@ a {
 	color:#393939;
 }
 
-.main-nav, a, {
-  margin-top: 5px;
-  padding: 5px 10px 5px 10px;
-	list-style: none;
+p {
+	text-align: center;
 }
+
+/* .main-nav, a,ul {
+  margin-top: 5px;
+	list-style: none;
+	align-items: center;
+} */
 
 li {
 		padding: 5px 10px 5px 10px;
@@ -40,7 +44,6 @@ h3 {
 .contact-text {
 	text-align: center;
 }
-
 
 
 /* =================================
@@ -80,7 +83,7 @@ p.intro	{
     	padding-left: .5em;
     }
 
-	footer {
+footer {
 		  display: flex;
 		  justify-content: space-between;
 		  align-items: center;
@@ -97,62 +100,76 @@ p.intro	{
 	.full {
 		display: none;
 	}
+.main-nav {
+	display: flex;
+	flex-direction: column;
+	margin-top:5px;
+}
+
+
+
 
 
 /* =================================
 		  Media Queries
 ==================================== */
 
-@media (min-width: 768px) {
+@media (min-width:768px){
+		.main-nav{
+			flex-direction: row;
+		}
 
+		.banner{
+			flex-wrap: nowrap;
+			flex-direction: row;
+		}
 
-	.main-nav,.row1,.row2,.banner{
-		display:flex;
-		flex-direction: row;
-}
+		.intro{
+			padding-right:5px;
 
-	.logo {
-			order:1;
-      padding-right: 10px;
+		}
+		.logo {
+			order: 1;
+			padding-right:10px;
+			padding
+		}
 
-}
-	.intro{
-		padding-right:30px;
-    padding-left: 30px;
+		.row1,.row2 {
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		.col {
+			flex-basis: calc(50% - 2px);
+		}
+
+		.top {
+ 		display:none;
+		}
+
+		.full {
+ 		display: inline-block;}
+
 	}
 
- .col {
-   flex:1 50%;
- }
 
- .row1,.row2 {
-   flex-wrap: wrap;}
- }
+	@media (min-width: 1024px) {
 
-.top {
-	display:none;
-}
-
-.full {
-	display: inline-block;
-
-}
-
-
-
-@media (min-width: 1024px) {
-	header {
+		header {
+		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
+		align-items: center;
 	}
-  .row1{
-    flex-direction:row;
-    flex-wrap: wrap;
-}
 
-  .logo {
-    padding-right:10px;
-  }
-.col {
-  flex-basis:30%;
+	.row1{
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	.col {
+		flex:1;
+		flex-basis: calc(33% - 20px);
+	}
+
+		
 }
