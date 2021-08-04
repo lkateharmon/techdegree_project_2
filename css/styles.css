@@ -41,6 +41,20 @@ h3 {
 	text-align: center;
 }
 
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  padding: 0 20px;
+
+
+}
+
+.full {
+	display:flex;
+	display: none;
+}
 
 
 /* =================================
@@ -83,6 +97,8 @@ p.intro	{
 
 
 
+
+
 /* =================================
 		  Media Queries
 ==================================== */
@@ -112,7 +128,13 @@ p.intro	{
  .row1,.row2 {
    flex-wrap: wrap;}
  }
-
+ .top {
+ 		display: none;
+ 	}
+ 	.full {
+ 		display: inline-block;
+ 		margin-left: 20px;
+ 	}
 
 
 
@@ -131,4 +153,13 @@ p.intro	{
   }
 .col {
   flex-basis:30%;
+}
+.top {
+		display: none;
+	}
+	.full {
+		display: inline-block;
+		margin-left: 20px;
+	}
+
 }
