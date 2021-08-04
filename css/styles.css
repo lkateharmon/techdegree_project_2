@@ -89,10 +89,13 @@ p.intro	{
 		  height: 100px;
 		}
 
-	.footer-nav {
+	.footer-nav,{
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
+	}
+	.full {
+		display: none;
 	}
 
 
@@ -130,9 +133,8 @@ p.intro	{
 	display:none;
 }
 
-.full-1,.full-2, .full-3{
-	display: flex;
-	flex-direction: row;
+.full {
+	display: inline-block;
 
 }
 
