@@ -52,7 +52,6 @@ footer {
 }
 
 .full {
-	display:flex;
 	display: none;
 }
 
@@ -95,10 +94,6 @@ p.intro	{
     }
 
 
-
-
-
-
 /* =================================
 		  Media Queries
 ==================================== */
@@ -135,6 +130,7 @@ p.intro	{
  		display: inline-block;
  		margin-left: 20px;
  	}
+}
 
 
 
