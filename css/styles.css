@@ -96,6 +96,7 @@ footer {
 		display: none;
 	}
 .main-nav {
+	padding-left: 0;
 	display: flex;
 	flex-direction: column;
 	margin-top:5px;
@@ -123,7 +124,7 @@ footer {
 		.logo {
 			order: 1;
 			padding-right:10px;
-			
+
 		}
 
 		.row1,.row2 {
